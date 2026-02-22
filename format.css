@@ -702,13 +702,13 @@ to {
 .date-circle::before{
     content: "";
     position: absolute;
-    inset: -2px; 
+    inset: -3px; 
     border-radius: 50%;
     filter: blur(1px);
     background: conic-gradient(
-        rgba(255, 222, 116, 0.9),
-        white,
-        rgba(253, 199, 62, 0.9)
+        #d4af37,
+        #d4af37,
+        white
     );
     animation: rotate 5s linear infinite;
     z-index: -1;
@@ -786,7 +786,8 @@ animation: bigRipple 5s infinite linear;
     }
     #homeSection .typing-container{
         color:rgba(255, 255, 255, 0.724);  
-        font-size:0.99em; 
+        font-size:1em;
+        font-style:oblique;
     }
     #homeSection p{
         font-size:0.8em;
@@ -830,4 +831,34 @@ animation: bigRipple 5s infinite linear;
             top:47%;
             z-index: 20000;
     }
+}
+/*=============  */
+.wrapper,
+#homeSection,
+body {
+    overflow: visible; 
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.4);
+    border-radius: 5px;
+}
+
+/* Keep smooth fade-in */
+body {
+    opacity: 0; 
+    animation: fadeInBody 2s ease-in forwards; 
+}
+
+@keyframes fadeInBody {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
