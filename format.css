@@ -787,11 +787,10 @@ animation: bigRipple 5s infinite linear;
     #homeSection .typing-container{
         color:white;  
         font-size:1.2em;
-        font-style:oblique;
     }
     #homeSection p{
-        font-size:1em;
-        line-height:0.8px;
+        font-size:0.9em;
+        line-height:0.6px;
         color:rgba(244, 216, 6, 0.938);
         font-style: oblique;
     } 
@@ -806,7 +805,7 @@ animation: bigRipple 5s infinite linear;
     overflow: hidden;
     font-size: 1.5em;
     font-family: serif;
-    color: rgba(249, 243, 234, 0.415);
+    color:white;
     text-shadow:
         0 0 5px rgba(255,255,255,0.4);
 }
@@ -822,7 +821,7 @@ animation: bigRipple 5s infinite linear;
 @media (max-width: 480px) {   
         .glass {
             width: 460px;
-              filter: brightness(0.8) blur(3px) saturate(1.2);
+              filter:saturate(1.2);
             height: 460px;
             border-radius:50%;
             background: url('gls_bg.png') right /cover no-repeat; 
