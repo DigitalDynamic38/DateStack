@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Environmental Events</title>
+        <link rel="stylesheet" href="explore.css">
+    </head>
+    <body>
+    <header>
+        <h1 id="topsc">Environmental Events</h1>
+    </header>
+    <!--  Events-->
+    <div class="cards-container">
+        <!-- 12 cards -->
+         <!-- 1 -->
+        <div class="card">
+            <div class="img-wrap">
+                <img src="wetland.png" alt="Wetlands Day">
+            </div>
+            <div class="card-content">
+                <h3>World Wetlands Day</h3>
+                <p class="date">February 2</p>
+                <a href="https://worldimportantdays.com/world-wetlands-day/"  class="more-info">More Info &rarr;</a>
+            </div>
+        </div>
+        <!-- 2 -->
+        <div class="card">
+            <div class="img-wrap">
+                <img src="wildlife.jpg" alt="World Wildlife Day">
+            </div>
+            <div class="card-content"> 
+                <h3>World Wildlife Day</h3>
+                <p class="date">March 3</p>
+                <a href="https://en.wikipedia.org/wiki/World_Wildlife_Day"  class="more-info">More Info &rarr;</a>
+            </div>
+        </div>
+        <!-- 3 -->
+        <div class="card">
+            <div class="img-wrap">
+                <img src="forest.jpg" alt="Forest Day">
+            </div>
+            <div class="card-content">
+                <h3>International Day of Forest</h3>
+                <p class="date">March 21</p>
+                <a href="https://worldimportantdays.com/international-day-of-forest/"  class="more-info">More Info &rarr;</a>
+            </div>
+        </div>
+        <!-- 4 -->
+        <div class="card">
+            <div class="img-wrap">
+                <img src="water.jpg" alt="World Water Day">
+            </div>
+            <div class="card-content">
+                <h3>World Water DAY</h3> 
+                <p class="date">March 22</p>
+                <a href="https://www.un.org/en/observances/water-day"  class="more-info">More Info &rarr;</a>
+            </div> 
+        </div>
+        <!-- 5 -->
+        <div class="card">
+            <div class="img-wrap">
+                <img src="earth.jpg" alt="Earth Day">
+            </div>
+            <div class="card-content">
+                <h3>Earth DAY</h3>
+                <p class="date">April 22</p>
+                <a href="https://en.wikipedia.org/wiki/Earth_Day"  class="more-info">More Info &rarr;</a>
+            </div>
+        </div>
+        <!-- 6 -->
+        <div class="card">
+            <div class="img-wrap">
+                <img src="bio.png" alt="Biological Day">
+            </div>
+            <div class="card-content">
+                <h3>Biological Diversity Day</h3>
+                <p class="date">May 22</p>
+                <a href="https://www.cbd.int/idb/default.shtml"  class="more-info">More Info &rarr;</a>
+            </div>
+        </div>
+        <!-- 7 -->
+        <div class="card">
+            <div class="img-wrap">
+                <img src="env.jpg" alt="Environment Day">
+            </div>
+            <div class="card-content">
+                <h3>World Environment Day</h3>
+                <p class="date">June 05</p>
+                <a href="https://worldimportantdays.com/world-environment-day/"  class="more-info">More Info &rarr;</a>
+            </div>
+        </div>
+        <!-- 8 -->
+        <div class="card">
+            <div class="img-wrap">
+                <img src="nat.jpg" alt="Conservation Day">
+            </div>
+            <div class="card-content">
+                <h3>Nature Conversation Day</h3>
+                <p class="date">July 07</p>
+                <a href="https://www.nationaldaycalendar.com/international/world-conservation-day-july-28"  class="more-info">More Info &rarr;</a>
+            </div>
+        </div>
+        <!-- 9 -->
+        <div class="card">
+            <div class="img-wrap">
+                <img src="ozone.jpg" alt="Ozone Day">
+            </div>
+            <div class="card-content">
+                <h3>World Ozone DAY</h3>
+                <p class="date">September 16</p>
+                <a href="https://en.wikipedia.org/wiki/Ozone_depletion"  class="more-info">More Info &rarr;</a>
+            </div>
+        </div>
+        <!-- 10 -->
+        <div class="card">
+            <div class="img-wrap">
+                <img src="welfare.png" alt="Animal Welfare Day">
+            </div>
+            <div class="card-content">
+                <h3>Animal Welfare Day</h3>
+                <p class="date">October 04</p>
+                <a href="https://en.wikipedia.org/wiki/World_Animal_Day"  class="more-info">More Info &rarr;</a>
+            </div>
+        </div>
+        <!-- 11 -->
+        <div class="card">
+                <div class="img-wrap">
+                    <img src="energy.jpg" alt="Energy Conservation Day">
+                </div>
+                <div class="card-content">
+                    <h3>    
+                        Conservation of energy Day</h3>
+                    <p class="date">December 14</p>
+                    <a href="https://en.wikipedia.org/wiki/Energy_conservation"  class="more-info">More Info &rarr;</a>
+                </div>
+        </div>
+      </div>
+      <button id="scrollBtn">↑</button>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const scrollBtn = document.getElementById("scrollBtn");
+            const categorySection = document.getElementById("topsc");
+        
+            window.addEventListener("scroll", function () {
+        
+                const isCategoryVisible =
+                    window.getComputedStyle(categorySection).display !== "none";
+        
+                if (isCategoryVisible && window.scrollY > 200) {
+                    scrollBtn.style.display = "block";
+                } else {
+                    scrollBtn.style.display = "none";
+                }
+        
+            });
+        
+            scrollBtn.addEventListener("click", function () {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            });
+        
+        });
+      </script>
+    </body>
+</html>

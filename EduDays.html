@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Educational Events</title>
+        <link rel="stylesheet" href="explore.css">
+    </head>
+    <body>
+    <header>
+        <h1 id="topsc">Educational Events</h1>
+    </header>
+    <!--  Events-->
+    <div class="cards-container">
+        <!-- 11 cards -->
+         <!-- 1 -->
+        <div class="card">
+            <div class="img-wrap">
+                <img src="interedu.png" alt="Teacher's Day">
+            </div>
+            <div class="card-content">
+                <h3>International DAY OF EDUCATION</h3>
+                <p class="date">January 24</p>
+                <a href="https://www.un.org/en/observances/education-day"  class="more-info">More Info &rarr;</a>
+            </div>
+        </div>
+        <!-- 2 -->
+        <div class="card">
+            <div class="img-wrap">
+                <img src="motherlang.png" alt="Mother language Day">
+            </div>
+            <div class="card-content">
+                <h3>International <br>MOTHER LANGUAGE DAY</h3>
+                <p class="date">February 21</p>
+                <a href="https://worldimportantdays.com/international-mother-language-day/"  class="more-info">More Info &rarr;</a>
+            </div>
+        </div>
+        <!-- 3 -->
+        <div class="card">
+            <div class="img-wrap">
+                <img src="scienceday.png" alt="Science Day">
+            </div>
+            <div class="card-content">
+                <h3>National SCIENCE DAY</h3>
+                <p class="date">February 28</p>
+                <a href="https://en.wikipedia.org/wiki/National_Science_Day"  class="more-info">More Info &rarr;</a>
+            </div>
+        </div>
+        <!-- 4 -->
+        <div class="card">
+            <div class="img-wrap">
+                <img src="bookday.png" alt="Book & Copyright Day">
+            </div>
+            <div class="card-content">
+                <h3>World BOOK & COPYRIGHT DAY</h3>
+                <p class="date">April 23</p>
+                <a href="https://en.wikipedia.org/wiki/World_Book_Day"  class="more-info">More Info &rarr;</a>
+            </div> 
+        </div>
+        <!-- 5 -->
+        <div class="card">
+            <div class="img-wrap">
+                <img src="techer.png" alt="Teachers Day">
+            </div>
+            <div class="card-content">
+                <h3>TEACHER's DAY(INDIA)</h3>
+                <p class="date">September 05</p>
+                <a href="https://www.ndtv.com/education/why-do-we-celebrate-teachers-day-on-september-5-the-story-of-dr-sarvepalli-radhakrishnan-9220294"  class="more-info">More Info &rarr;</a>
+            </div>
+        </div>
+        <!-- 6 -->
+        <div class="card">
+            <div class="img-wrap">
+                <img src="literacy.png" alt="Literacy Day">
+            </div>
+            <div class="card-content">
+                <h3>World LITERACY DAY</h3>
+                <p class="date">September 08</p>
+                <a href="https://en.wikipedia.org/wiki/International_Literacy_Day"  class="more-info">More Info &rarr;</a>
+            </div>
+        </div>
+        <!-- 7 -->
+        <div class="card">
+            <div class="img-wrap">
+                <img src="hindidiwas.png" alt="Hindi Diwas">
+            </div>
+            <div class="card-content">
+                <h3>HINDI DIWAS</h3>
+                <p class="date">September 14</p>
+                <a href="https://en.wikipedia.org/wiki/Hindi_Day"  class="more-info">More Info &rarr;</a>
+            </div>
+        </div>
+        <!-- 8 -->
+        <div class="card">
+            <div class="img-wrap">
+                <img src="wrdtehrs.png" alt="World Teachers Day">
+            </div>
+            <div class="card-content">
+                <h3>World TEACHERS DAY</h3>
+                <p class="date">October 05</p>
+                <a href="https://www.unesco.org/en/days/teachers"  class="more-info">More Info &rarr;</a>
+            </div>
+        </div>
+        <!-- 9 -->
+        <div class="card">
+            <div class="img-wrap">
+                <img src="educatnal.png" alt="Educational Day">
+            </div>
+            <div class="card-content">
+                <h3>National<br> EDUCATIONAL DAY</h3>
+                <p class="date">November 11</p>
+                <a href="https://en.wikipedia.org/wiki/National_Education_Day_(India)"  class="more-info">More Info &rarr;</a>
+            </div>
+        </div>
+        <!-- 10 -->
+        <div class="card">
+            <div class="img-wrap">
+                <img src="tolerance.png" alt="TOLERANCE Day">
+            </div>
+            <div class="card-content">
+                <h3>National DAY For TOLERANCE</h3>
+                <p class="date">November 16</p>
+                <a href="https://www.unesco.org/en/days/tolerance"  class="more-info">More Info &rarr;</a>
+            </div>
+        </div>
+        <!-- 11 -->
+        <div class="card">
+                <div class="img-wrap">
+                    <img src="minortyday.png" alt="MINORITIES RIGHTS Day">
+                </div>
+                <div class="card-content">
+                    <h3>MINORITIES RIGHTS DAY</h3>
+                    <p class="date">December 18</p>
+                    <a href="https://www.vedantu.com/general-knowledge/minorities-right-day-in-india"  class="more-info">More Info &rarr;</a>
+                </div>
+        </div>
+      </div>
+      <button id="scrollBtn">↑</button>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const scrollBtn = document.getElementById("scrollBtn");
+            const categorySection = document.getElementById("topsc");
+        
+            window.addEventListener("scroll", function () {
+        
+                const isCategoryVisible =
+                    window.getComputedStyle(categorySection).display !== "none";
+        
+                if (isCategoryVisible && window.scrollY > 200) {
+                    scrollBtn.style.display = "block";
+                } else {
+                    scrollBtn.style.display = "none";
+                }
+        
+            });
+        
+            scrollBtn.addEventListener("click", function () {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            });
+        
+        });
+      </script>
+    </body>
+</html>

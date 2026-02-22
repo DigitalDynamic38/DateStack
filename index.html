@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>DateStack</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="format.css">
+    </head> 
+    <body>
+        <header>
+            <div class="logo-date-row">
+            <h1>
+            DateStack<span><img src="icon.png"></span>
+            </h1>
+            </div>
+            <h2 id="typing"></h2>
+            <div class="hamburger" onclick="toggleMenu()">
+                ☰
+            </div>
+            <nav>
+                <a  id="homeLink" onclick=showHome()> Home</a>
+                <a id="categoryLink" onclick=showCategory()> Category</a>
+                <a id="quizLink" onclick="showQuiz()"> Quiz</a>
+                <a id="aboutLink" onclick="showAbout()"> About</a>
+            </nav>
+        </header>
+        <section id="homeSection">
+                <div class="circle-wrapper">
+                    <div class="date-circle">
+                        <span id="date"></span>
+                    </div>
+                </div>
+                <div class="typing-container">
+                        <h2 id="type"></h2>
+                      <p class="connected-info">All connected by a date..</p>
+                </div>
+                <div class="glass"></div>
+        </section>
+        <!-- slideshow -->
+          <section id ="categorySection" class="hidden">
+            <h2 class="section-title"><br>Explore Categories</h2> 
+            <div class="wrapper">
+                <div class="card">
+                    <img src="edu.png">
+                    <div class="overlay">
+                        <h2>Educational Days</h2>
+                        <p>Dive into physics, mathematics and scientific discoveries.</p>
+                        <a href="EduDays.html"><button>Explore</button></a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="national.png">
+                    <div class="overlay">
+                        <h2>National Days</h2>
+                        <p>Explore national events with educational insight..<br>
+                            Informed action for a stronger nation.</p>
+                        <a href="NationalDays.html"><button>Explore</button></a>
+                    </div>
+                </div>
+            
+                <div class="card">
+                    <img src="inter.jpg">
+                    <div class="overlay">
+                        <h2>International Days</h2>
+                        <p>Explore international events with educational context..</p>
+                        <a href="Interdays.html"><button>Explore</button></a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="aware.jpg">
+                    <div class="overlay">
+                        <h2>Awareness Days</h2>
+                        <p>Understand awareness initiatives through an educational lens.<br>
+                            Awareness leads to responsible action</p>
+                        <a href="Awaredays.html"><button>Explore</button></a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="nature.jpg">
+                    <div class="overlay">
+                        <h2>Environmental Days</h2>
+                        <p>Learn about environmental events through an educational perspective.</p>
+                        <a href="Evndays.html"><button>Explore</button></a>
+                    </div>
+                </div>
+            </div>
+         </section> 
+         <button id="scrollBtn">↑</button>
+         <!-- Quiz Section -->
+          <section id="quiz" class="quiz-section">
+            <div class="quiz-container">
+                <h1 class="hd"> Memory Lane!..</h1>
+                <h3 id="question"></h3>
+                <div class="options">
+                    <button class="option"></button>
+                    <button class="option"></button>
+                    <button class="option"></button>
+                    <button class="option"></button>
+                </div> 
+                <p id="result"></p>
+                <button id="nextBtn">NEXT</button>
+            </div> 
+            <script src="quiz.js"></script> 
+          </section>
+          <!-- About Section -->
+          <section id="aboutSection">
+                <div class="about-content">
+                  <h2>About DATESTACK</h2>
+                  <p>
+                    I’m a 1st-year CSE BTech student who created DATESTACK to help students know important events clearly and quickly.
+                  </p>
+                  <p>
+                    DATESTACK organizes key dates category-wise and uses quizzes to make remembering easier and more fun.
+                  </p>
+                  <blockquote>
+                    “Knowing is different from learning; we have to know everything, learning is secondary.”
+                  </blockquote>
+                  <p>
+                    This site is for anyone who wants to explore essential events and build solid knowledge.
+                  </p>
+                </div>             
+          </section>
+        <script src="scripting.js"></script>
+    </body>
+</html>
