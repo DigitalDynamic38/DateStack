@@ -785,13 +785,13 @@ animation: bigRipple 5s infinite linear;
         font-size:0.8em;
     }
     #homeSection .typing-container{
-        color:rgba(255, 255, 255, 0.724);  
-        font-size:1em;
+        color:white;  
+        font-size:1.2em;
         font-style:oblique;
     }
     #homeSection p{
-        font-size:0.8em;
-        line-height:1px;
+        font-size:1em;
+        line-height:0.8px;
         color:rgba(244, 216, 6, 0.938);
         font-style: oblique;
     } 
@@ -822,6 +822,7 @@ animation: bigRipple 5s infinite linear;
 @media (max-width: 480px) {   
         .glass {
             width: 460px;
+              filter: brightness(0.8) blur(3px) saturate(1.2);
             height: 460px;
             border-radius:50%;
             background: url('gls_bg.png') right /cover no-repeat; 
@@ -830,35 +831,7 @@ animation: bigRipple 5s infinite linear;
             transform: rotate(6deg);
             top:47%;
             z-index: 20000;
+            
     }
 }
-/*=============  */
-.wrapper,
-#homeSection,
-body {
-    overflow: visible; 
-}
-::-webkit-scrollbar {
-    width: 10px;
-}
 
-::-webkit-scrollbar-track {
-    background: rgba(0,0,0,0.1);
-    border-radius: 5px;
-}
-
-::-webkit-scrollbar-thumb {
-    background: rgba(0,0,0,0.4);
-    border-radius: 5px;
-}
-
-/* Keep smooth fade-in */
-body {
-    opacity: 0; 
-    animation: fadeInBody 2s ease-in forwards; 
-}
-
-@keyframes fadeInBody {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
