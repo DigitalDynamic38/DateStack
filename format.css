@@ -792,8 +792,8 @@ animation: bigRipple 5s infinite linear;
         font-size:0.85em;
         line-height:0.6px;
         color:rgba(244, 216, 6, 0.938);
-        font-style: oblique;
-        margin-top:0.3em;
+        font-style:italic;
+        
     } 
     .typing-container h2{
        font-size:0.995em;
