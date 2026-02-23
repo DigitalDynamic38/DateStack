@@ -784,11 +784,11 @@ animation: bigRipple 5s infinite linear;
     .date-box h2{
         font-size:0.8em;
     }
-    #homeSection .typing-container{
+   .typing-container{
         color:white;  
         font-size:1.1em;
     }
-    .typing-container p{
+    .connected-info{
         font-size:0.85em;
         color:rgba(244, 216, 6, 0.938);
         font-style:italic;
@@ -796,7 +796,7 @@ animation: bigRipple 5s infinite linear;
         margin-top:0.3em;
         
     } 
-    .typing-container h2{
+    #type{
        font-size:0.995em;
     }
     #homeSection{
