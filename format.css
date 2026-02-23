@@ -797,8 +797,7 @@ animation: bigRipple 5s infinite linear;
     } 
     .typing-container h2{
        font-size:0.995em;
-        line-height:0.6px; 
-        margin-bottom:0.3em;
+        margin-bottom:0.02em;
     }
     #homeSection{
         display:flex;
