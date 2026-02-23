@@ -790,14 +790,12 @@ animation: bigRipple 5s infinite linear;
     }
     .typing-container p{
         font-size:0.85em;
-        line-height:0.6px;
         color:rgba(244, 216, 6, 0.938);
         font-style:italic;
         
     } 
     .typing-container h2{
        font-size:0.995em;
-        margin-bottom:0.02em;
     }
     #homeSection{
         display:flex;
